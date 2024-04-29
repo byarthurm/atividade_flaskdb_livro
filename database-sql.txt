@@ -1,0 +1,23 @@
+create table Livro (
+ ID_LIVRO int auto_increment primary key,
+ TITULO varchar(100), 
+ AUTOR varchar(254),
+ ANO_PUBLICACAO int);
+
+ 
+ create table Usuario(
+	id_usuario int auto_increment primary key,
+    email varchar(254),
+    senha varchar(100)
+ );
+
+  
+insert into Usuario (email, senha) 
+values( 'admin@gmail.com', 123) ;
+
+      
+insert into livro (id_livro, titulo, autor, ano_publicacao) 
+values(1, 'Jogador Número 1', 'Ernest Cline', 2011) , 
+      (2, 'Divergente', 'Veronica Roth', 2011),
+      (3, 'Aurora Rising', 'Amie Kaufman e Jay Kristoff', 2019);
+      
